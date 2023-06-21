@@ -1,14 +1,18 @@
 
 import { React } from 'react';
+import NameTextBox from './nameInput';
+import PhoneNoTextBox from './phoneNoInput';
+import GenderInput from './genderInput';
+import SaveButton from './saveButton';
 
 const Main = (context) => <div className="App" role="App">
 	<div  className="header" >
 	<h2>Super Market - Add Customer Details</h2>
 	</div>
-	<div className="text-box"></div>
-	<div className="text-box"></div>
-	<div className="text-box"></div>
-	<div className="text-box"></div>
+	<div className="text-box"><NameTextBox {...context}/></div>
+	<div className="text-box"><PhoneNoTextBox {...context}/></div>
+	<div className="text-box"><GenderInput {...context}/></div>
+	<div className="text-box"><SaveButton {...context}/></div>
 </div>;
 
 export default Main;
