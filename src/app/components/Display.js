@@ -2,14 +2,16 @@
 
 import { React } from 'react';
 import { useState } from 'react';
-import Button from './Button';
+import Main from '../components/Main';
 
 const Display = () =>{
-    const [state,setState] = useState({count:0});
-    return <div>
-        Count:{state.count}
-        <Button {...{state,setState}}/>
-    </div>;
+    const [state,setState] = useState({
+        name: '',
+        phoneNo: '',
+        gender: '',
+        customerDetails: [],
+    });
+    return <Main {...{state,setState}}/>;
 }
 	
 
