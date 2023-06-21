@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Display from './components/Display';
 
 const Page =()=>
-<Display/>
+<Link href={{
+  pathname:'/client'
+}}/>
 
 export default Page;
